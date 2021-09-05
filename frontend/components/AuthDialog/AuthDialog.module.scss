@@ -1,0 +1,34 @@
+.authDialog {
+  padding: 30px;
+  padding-top: 15px;
+
+  svg {
+    width: 24px;
+  }
+
+  .authTitle {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .mainMethods {
+    button {
+      position: relative;
+    }
+
+    svg {
+      position: absolute;
+      left: 16px;
+    }
+  }
+
+  .otherMethods {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      flex-basis: 28%;
+    }
+  }
+}
