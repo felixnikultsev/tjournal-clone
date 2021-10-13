@@ -7,7 +7,7 @@ export const LoginValidationSchema = Yup.object().shape({
 
 export const RegistrationValidationSchema = Yup.object()
   .shape({
-    fullname: Yup.string()
+    fullName: Yup.string()
       .test('count', 'Некорректные имя и фамилия', (value) => {
         const splittedString = value?.split(/\W+/);
         return splittedString?.length === 2 && splittedString.every((s) => s.length > 1);
